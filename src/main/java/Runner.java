@@ -1,4 +1,5 @@
 import db.DBConsole;
+import db.DBGame;
 import db.DBHelper;
 import models.Console;
 import models.Games;
@@ -38,6 +39,8 @@ public class Runner {
         List<Console> allConsoles = DBHelper.getAll(Console.class);
 
         List<Games> ps4Games = DBConsole.availableGames(ps4);
+
+        List<Console> fifaConsoles = DBGame.getConsoles(fifa);
 
     }
 
